@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Facts Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+            padding: 30px 0;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .facts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .fact-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .fact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .fact-card .icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .fact-card h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        .fact-card p {
+            color: #555;
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .facts-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌟 Fun Facts 🌟</h1>
+            <p>Discover amazing facts about our world!</p>
+        </header>
+
+        <div class="facts-grid">
+            <div class="fact-card">
+                <div class="icon">🐙</div>
+                <h2>Octopus Intelligence</h2>
+                <p>Octopuses have three hearts! Two pump blood to the gills, while the third pumps it to the rest of the body. They're also incredibly intelligent and can solve puzzles and use tools.</p>
+            </div>
+
+            <div class="fact-card">
+                <div class="icon">🌍</div>
+                <h2>Earth's Age</h2>
+                <p>Earth is approximately 4.54 billion years old. That's almost a third of the age of the entire universe, which is about 13.8 billion years old!</p>
+            </div>
+
+            <div class="fact-card">
+                <div class="icon">🍯</div>
+                <h2>Honey Never Spoils</h2>
+                <p>Honey is the only food that never spoils and can last indefinitely. Archaeologists have found pots of honey in Egyptian tombs that are over 3,000 years old and still edible!</p>
+            </div>
+
+            <div class="fact-card">
+                <div class="icon">⚡</div>
+                <h2>Lightning Speed</h2>
+                <p>Lightning can reach temperatures of around 30,000 Kelvin (53,540°F), which is nearly 5 times hotter than the surface of the sun!</p>
+            </div>
+
+            <div class="fact-card">
+                <div class="icon">🧠</div>
+                <h2>Brain Power</h2>
+                <p>Your brain uses about 20% of your body's energy while only making up 2% of your body's weight. It contains approximately 86 billion neurons!</p>
+            </div>
+
+            <div class="fact-card">
+                <div class="icon">🦊</div>
+                <h2>Fox Hearing</h2>
+                <p>Foxes can hear a mouse squeaking from 100 feet away! They use their large ears not just for hearing but also to regulate body temperature.</p>
+            </div>
+
+            <div class="fact-card">
+                <div class="icon">🌌</div>
+                <h2>Space Stars</h2>
+                <p>There are more stars in the universe than grains of sand on all of Earth's beaches. The observable universe contains an estimated 2 trillion galaxies!</p>
+            </div>
+
+            <div class="fact-card">
+                <div class="icon">🦋</div>
+                <h2>Butterfly Taste</h2>
+                <p>Butterflies taste with their feet! They land on plants to determine whether the plant is good to lay eggs on by tasting it with sensors in their feet.</p>
+            </div>
+
+            <div class="fact-card">
+                <div class="icon">💤</div>
+                <h2>Sleep Facts</h2>
+                <p>A giraffe only needs 1.9 hours of sleep per day and can go weeks without drinking water. In contrast, a brown bat sleeps nearly 20 hours a day!</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Fun Facts Website. Created with ❤️ | Learn something new every day!</p>
+        </footer>
+    </div>
+</body>
+</html>
